@@ -41038,7 +41038,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f9f9196b9860425e9aa7a4c57b7ac4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthText: {fileID: 2074480691}
+  PlayerHealth: 5
+  invulnerable: 0
+  iFrameTime: 2
 --- !u!114 &2074480691
 MonoBehaviour:
   m_ObjectHideFlags: 0

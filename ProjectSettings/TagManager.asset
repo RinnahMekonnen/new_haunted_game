@@ -3,18 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Boss
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Platform
+  - 
   - Water
   - UI
-  - Lights
-  - item
-  - slot
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -41,16 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Lights
-    uniqueID: 2550209161
-    locked: 0
-  - name: Platform
-    uniqueID: 2420232201
-    locked: 0
-  - name: item
-    uniqueID: 3310302593
-    locked: 0
-  - name: slot
-    uniqueID: 3544319057
     locked: 0
