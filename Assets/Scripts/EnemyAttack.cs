@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemyAttack : MonoBehaviour
 {
     // GameObject enemy
-    PlayerHealth enemy;
+    healthScript enemy;
     public int attackDamage = 10;
 
     public float initialHealth = 100.0f;
@@ -23,7 +23,7 @@ public class EnemyAttack : MonoBehaviour
             // get the object.getcompionent,EnemyDamage>
             // set enemy to the one above
 
-            enemy = collision.GetComponent<PlayerHealth>();
+            enemy = collision.GetComponent<healthScript>();
             enemy.TakeDamage(attackDamage);
         }
     }

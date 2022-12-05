@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EnemyHealth : MonoBehaviour
 {
     public int health = 100;
-    public Slider healthSlider;
+    //public Slider healthSlider;
     public bool dead = false;
 
     Animator anim;
@@ -25,7 +25,7 @@ public class EnemyHealth : MonoBehaviour
             //Die
             dead = true;
             anim.SetTrigger("Die");
-            healthSlider.gameObject.SetActive(false);
+            //healthSlider.gameObject.SetActive(false);
             Destroy(this.gameObject, 2f);
         }
         else
@@ -33,7 +33,7 @@ public class EnemyHealth : MonoBehaviour
             anim.SetTrigger("Hit");
         }
 
-        healthSlider.value = health;
+        //healthSlider.value = health;
         //Update Slider UI
     }
 }

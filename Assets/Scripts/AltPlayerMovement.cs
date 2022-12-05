@@ -40,8 +40,8 @@ public class AltPlayerMovement : MonoBehaviour
                 isFacingRight = false;
                 transform.localScale = new Vector3(transform.localScale.x * -1
                     , transform.localScale.y, transform.localScale.z);
-                playerHealth.healthSlider.transform.localScale = new Vector3(playerHealth.healthSlider.transform.localScale.x * -1
-                    , playerHealth.healthSlider.transform.localScale.y, playerHealth.healthSlider.transform.localScale.z);
+                //playerHealth.healthSlider.transform.localScale = new Vector3(playerHealth.healthSlider.transform.localScale.x * -1
+                //    , playerHealth.healthSlider.transform.localScale.y, playerHealth.healthSlider.transform.localScale.z);
             }
         }
         else if(horizontal > 0)
@@ -51,8 +51,8 @@ public class AltPlayerMovement : MonoBehaviour
                 isFacingRight = true;
                 transform.localScale = new Vector3(transform.localScale.x * -1
                     , transform.localScale.y, transform.localScale.z);
-                playerHealth.healthSlider.transform.localScale = new Vector3(playerHealth.healthSlider.transform.localScale.x * -1
-                         , playerHealth.healthSlider.transform.localScale.y, playerHealth.healthSlider.transform.localScale.z);
+                //playerHealth.healthSlider.transform.localScale = new Vector3(playerHealth.healthSlider.transform.localScale.x * -1
+                //         , playerHealth.healthSlider.transform.localScale.y, playerHealth.healthSlider.transform.localScale.z);
             }
         }
 

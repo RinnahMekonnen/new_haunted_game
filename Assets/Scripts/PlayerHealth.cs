@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public int health = 100;
-    public Slider healthSlider;
+    //public Slider healthSlider;
     public bool dead = false;
 
     Animator anim;
@@ -24,15 +24,15 @@ public class PlayerHealth : MonoBehaviour
             health = 0;
             //Die
             dead = true;
-            anim.SetTrigger("Die");
-            healthSlider.gameObject.SetActive(false);
+            anim.SetTrigger("Dead");
+           // healthSlider.gameObject.SetActive(false);
         }
         else
         {
             anim.SetTrigger("Hit");
         }
 
-        healthSlider.value = health;
+        //healthSlider.value = health;
         //Update Slider UI
     }
 }

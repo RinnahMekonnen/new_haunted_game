@@ -6,16 +6,21 @@ using UnityEngine.UI;
 
 public class healthScript : MonoBehaviour
 {
-    private int health = 5;
-    public Text healthText;
+    public int PlayerHealth = 5;
+    //public Text healthText;
 
     private void Update()
     {
-        healthText.text = health.ToString();
+        //healthText.text = health.ToString();
 
-        if (Input.GetKeyDown(KeyCode.Space) && health>0)
+        if (Input.GetKeyDown(KeyCode.Space) && PlayerHealth>0)
         {
-            health--;
+            PlayerHealth--;
         }
+    }
+
+    public void TakeDamage(int attackDamage)
+    {
+        PlayerHealth -= attackDamage;
     }
 }
