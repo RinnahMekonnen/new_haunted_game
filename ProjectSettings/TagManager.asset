@@ -3,6 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+  tags:
   - Enemy
   - Boss
   layers:
@@ -13,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Lights
-  - 
+  - window
   - 
   - 
   - 
@@ -47,4 +48,7 @@ TagManager:
     locked: 0
   - name: Platform
     uniqueID: 2420232201
+    locked: 0
+  - name: window
+    uniqueID: 3738719891
     locked: 0
