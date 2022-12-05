@@ -50,6 +50,7 @@
      <Compile Include="Assets/MetroidvaniaController/Scripts/Player/Attack.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
+     <Compile Include="Assets/Boss.cs" />
      <Compile Include="Assets/MetroidvaniaController/Scripts/Player/CameraFollow.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
@@ -64,15 +65,11 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
      <Compile Include="Assets/MetroidvaniaController/Scripts/Enemies/Ally.cs" />
-<<<<<<< Updated upstream
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets/Scenes/ItemInventoryCode/Inventory.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
-=======
-     <Compile Include="Assets/Scenes/ItemInventoryCode/Inventory.cs" />
->>>>>>> Stashed changes
      <Compile Include="Assets/Scenes/ItemInventoryCode/Item.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
      <Compile Include="Assets/MetroidvaniaController/Scripts/Player/ThrowableWeapon.cs" />
@@ -83,6 +80,7 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
      <Compile Include="Assets/MetroidvaniaController/Scripts/Enemies/Enemy.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets/Boss_Walk.cs" />
      <Compile Include="Assets/MetroidvaniaController/Scripts/Environment/Grass.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
@@ -90,16 +88,14 @@
      <Compile Include="Assets/MetroidvaniaController/Scripts/Environment/DestructibleObject.cs" />
      <Compile Include="Assets/Scenes/ItemInventoryCode/Pickup.cs" />
      <Compile Include="Assets/MetroidvaniaController/Animation/Scripts/PlaySoundBehaviour.cs" />
-<<<<<<< Updated upstream
+     <Compile Include="Assets/Scenes/healthScript.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
-     <Compile Include="Assets/Scenes/healthScript.cs" />
-=======
->>>>>>> Stashed changes
+     <Compile Include="Assets/Scenes/SceneChanger.cs" />
      <None Include="Assets/Cainos/Pixel Art Icon Pack - RPG/Shader/SH UI Icon Outline Color.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
