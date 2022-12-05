@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Enemy
+=======
+>>>>>>> c70ac707023b558895828aef29b26f8e8c99e45f
   - Boss
   layers:
   - Default
@@ -14,8 +17,13 @@ TagManager:
   - Water
   - UI
   - Lights
+<<<<<<< HEAD
   - window
   - 
+=======
+  - item
+  - slot
+>>>>>>> c70ac707023b558895828aef29b26f8e8c99e45f
   - 
   - 
   - 
@@ -49,6 +57,14 @@ TagManager:
   - name: Platform
     uniqueID: 2420232201
     locked: 0
+<<<<<<< HEAD
   - name: window
     uniqueID: 3738719891
+=======
+  - name: item
+    uniqueID: 3310302593
+    locked: 0
+  - name: slot
+    uniqueID: 3544319057
+>>>>>>> c70ac707023b558895828aef29b26f8e8c99e45f
     locked: 0
