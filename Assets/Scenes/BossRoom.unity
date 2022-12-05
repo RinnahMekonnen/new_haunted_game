@@ -252,7 +252,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f9f9196b9860425e9aa7a4c57b7ac4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerHealth: 5
+  PlayerHealth: 50
+  invulnerable: 0
+  iFrameTime: 1
 --- !u!1 &296978740
 GameObject:
   m_ObjectHideFlags: 0

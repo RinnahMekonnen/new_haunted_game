@@ -14,6 +14,10 @@ public class Boss : MonoBehaviour
 
     public void LookAtPlayer()
     {
+        if (player == null)
+        {
+            return;
+        }
         rb = GetComponent<Rigidbody2D>();
         Vector3 flipped = transform.localScale;
         flipped.z *= -1f;

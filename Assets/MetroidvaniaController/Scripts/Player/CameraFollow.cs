@@ -38,15 +38,18 @@ public class CameraFollow : MonoBehaviour
 
 	private void Update()
 	{
-		Vector3 newPosition = Target.position + new Vector3(0, offset, 0); ;
-		newPosition.z = -distance;
-		transform.position = Vector3.Slerp(transform.position, newPosition, FollowSpeed * Time.deltaTime);
-
-		if (shakeDuration > 0)
+		if (Target != null)
 		{
-			camTransform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
+			Vector3 newPosition = Target.position + new Vector3(0, offset, 0); ;
+			newPosition.z = -distance;
+			transform.position = Vector3.Slerp(transform.position, newPosition, FollowSpeed * Time.deltaTime);
 
-			shakeDuration -= Time.deltaTime * decreaseFactor;
+			if (shakeDuration > 0)
+			{
+				camTransform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
+
+				shakeDuration -= Time.deltaTime * decreaseFactor;
+			}
 		}
 	}
 
