@@ -1,6 +1,7 @@
 
 
 //  Borrowed from https://github.com/jddunn/random-movement-AI-unity/blob/master/RandomMovement.cs
+//https://answers.unity.com/questions/1446119/moving-a-non-player-object-in-a-random-direction-w.html
 // Random movement script for Unity GameObjects
 //  GameObjects with this script attached will constantly move at a random range of speed
 //  and rotate at a random range of angles, and upon collision with walls or other GameObject tags,
@@ -9,7 +10,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 
 public class movingPlatform : MonoBehaviour {
 
@@ -32,12 +32,10 @@ public class movingPlatform : MonoBehaviour {
 
     void OnCollisionEnter (Collision col) {
 
-        if (col.gameObject.tag == collisionTags[0]) {                   //  Tag it with a wall or other object
+        if (col.gameObject.tag == "Platform") {                   //  Tag it with a wall or other object
             GetComponent<AudioSource>().PlayOneShot (collisionSound, 2.0f);         //  Plays a sound on collision
             baseDirection = baseDirection + Random.Range (-30, 30);   // Switch to a new direction on collision
 
-        // use the above code as a template for all the collisionTags
-        // add here.. and on.. and on..
     }
 }
 
@@ -46,7 +44,7 @@ public class movingPlatform : MonoBehaviour {
         randomDirection = new Vector3(0, Mathf.Sin(timeVar) * (rotationRange / 2) + baseDirection, 0); //   Moving at random angles 
         timeVar += step;
         speed = Random.Range(minSpeed, maxSpeed);              //      Change this range of numbers to change speed
-        GetComponent<Rigidbody>().AddForce(transform.forward * speed);
+        GetComponent<Rigidbody2D>().AddForce(transform.forward * speed);
         transform.Rotate(randomDirection * Time.deltaTime * 10.0f);        
         }
     }
