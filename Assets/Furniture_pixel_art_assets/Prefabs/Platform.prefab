@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2841721183252545574}
   - component: {fileID: 2841721183252545573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mainlevbuild_376
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2841721183252545572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.1757717, y: -4.9460607, z: 9.953149}
+  m_LocalPosition: {x: -4.175772, y: -4.9460607, z: 9.953149}
   m_LocalScale: {x: 0.7818924, y: 0.72472, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1292510223
-  m_SortingLayer: 1
+  m_SortingLayerID: 2122559033
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300752, guid: d21555ce72e390f49ba41fd54c373b1b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2841721183276895515}
   - component: {fileID: 2841721183276895514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mainlevbuild_371
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2841721183276895513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.17797, y: -3.6784616, z: 9.953149}
+  m_LocalPosition: {x: -4.17797, y: -3.6784616, z: 9.953149}
   m_LocalScale: {x: 0.7818924, y: 0.72472, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -154,8 +154,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1292510223
-  m_SortingLayer: 1
+  m_SortingLayerID: 2122559033
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300742, guid: d21555ce72e390f49ba41fd54c373b1b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2841721183294820600}
   - component: {fileID: 2841721183294820599}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mainlevbuild_376 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2841721183294820598}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -7.1757708, y: -2.3586612, z: 9.953149}
+  m_LocalPosition: {x: -4.175771, y: -2.3586612, z: 9.953149}
   m_LocalScale: {x: 0.7818924, y: 0.72472, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -238,8 +238,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1292510223
-  m_SortingLayer: 1
+  m_SortingLayerID: 2122559033
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300752, guid: d21555ce72e390f49ba41fd54c373b1b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2841721184041911022}
   - component: {fileID: 2841721184041911021}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mainlevbuild_370
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2841721184041911020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.17577, y: -4.388061, z: 9.953149}
+  m_LocalPosition: {x: -4.17577, y: -4.388061, z: 9.953149}
   m_LocalScale: {x: 0.7818924, y: 0.72472, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -322,8 +322,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1292510223
-  m_SortingLayer: 1
+  m_SortingLayerID: 2122559033
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300740, guid: d21555ce72e390f49ba41fd54c373b1b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -346,7 +346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2841721184587665210}
   - component: {fileID: 2841721184587665209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mainlevbuild_372
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2841721184587665208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.17797, y: -3.020061, z: 9.953149}
+  m_LocalPosition: {x: -4.17797, y: -3.020061, z: 9.953149}
   m_LocalScale: {x: 0.7818924, y: 0.72472, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -406,8 +406,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1292510223
-  m_SortingLayer: 1
+  m_SortingLayerID: 2122559033
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300744, guid: d21555ce72e390f49ba41fd54c373b1b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -429,7 +429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3452987706610561620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
