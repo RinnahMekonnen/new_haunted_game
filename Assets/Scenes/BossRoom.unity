@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 73370714}
   - component: {fileID: 73370713}
   - component: {fileID: 73370715}
+  - component: {fileID: 73370716}
   m_Layer: 5
   m_Name: 'slot4 '
   m_TagString: Untagged
@@ -159,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.48037523, y: 0.06556909}
   m_AnchorMax: {x: 0.48037523, y: 0.06556909}
-  m_AnchoredPosition: {x: 129, y: 2.5400543}
+  m_AnchoredPosition: {x: 115, y: 2.9999542}
   m_SizeDelta: {x: 34.337, y: 33.0659}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73370713
@@ -244,6 +245,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &73370716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73370711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db0a6f7507e646aba1365092519eb01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i: 3
 --- !u!1001 &132604652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -645,6 +659,7 @@ GameObject:
   - component: {fileID: 516559766}
   - component: {fileID: 516559768}
   - component: {fileID: 516559767}
+  - component: {fileID: 516559769}
   m_Layer: 5
   m_Name: slot 3
   m_TagString: Untagged
@@ -669,7 +684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6261593, y: 0.06556909}
   m_AnchorMax: {x: 0.6261593, y: 0.06556909}
-  m_AnchoredPosition: {x: -40, y: 2.5399933}
+  m_AnchoredPosition: {x: -54, y: 2.9998932}
   m_SizeDelta: {x: 34.337, y: 33.066}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &516559767
@@ -710,6 +725,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516559765}
   m_CullTransparentMesh: 1
+--- !u!114 &516559769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516559765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db0a6f7507e646aba1365092519eb01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i: 2
 --- !u!1 &835998938
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,8 +971,9 @@ GameObject:
   - component: {fileID: 1015396610}
   - component: {fileID: 1015396612}
   - component: {fileID: 1015396611}
+  - component: {fileID: 1015396613}
   m_Layer: 0
-  m_Name: dropGear (1)
+  m_Name: dropGear (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1008,6 +1037,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015396609}
   m_CullTransparentMesh: 1
+--- !u!114 &1015396613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015396609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1015396611}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 73370716}
+        m_TargetAssemblyTypeName: Slot, Assembly-CSharp
+        m_MethodName: dropItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11500000, guid: 57c5cfdc8bc0a4bf2bc36b9eec47d97a, type: 3}
+        m_TargetAssemblyTypeName: Slot, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1217714477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,6 +1118,7 @@ GameObject:
   - component: {fileID: 1217714481}
   - component: {fileID: 1217714480}
   - component: {fileID: 1217714479}
+  - component: {fileID: 1217714483}
   m_Layer: 1
   m_Name: healthPotion (1)
   m_TagString: Untagged
@@ -1115,6 +1213,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217714477}
   m_CullTransparentMesh: 1
+--- !u!114 &1217714483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217714477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5cfdc8bc0a4bf2bc36b9eec47d97a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 6281455671880511247, guid: af59429f4b121469e8d078246f6bb5d6, type: 3}
 --- !u!1 &1236137821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1350,7 @@ GameObject:
   - component: {fileID: 1342507335}
   - component: {fileID: 1342507334}
   m_Layer: 0
-  m_Name: dropGear (3)
+  m_Name: dropGear 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1308,7 +1419,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1342507335}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1870128318}
+        m_TargetAssemblyTypeName: Slot, Assembly-CSharp
+        m_MethodName: dropItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11500000, guid: 57c5cfdc8bc0a4bf2bc36b9eec47d97a, type: 3}
+        m_TargetAssemblyTypeName: Slot, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1342507335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1360,6 +1495,7 @@ GameObject:
   - component: {fileID: 1360723075}
   - component: {fileID: 1360723074}
   - component: {fileID: 1360723073}
+  - component: {fileID: 1360723077}
   m_Layer: 1
   m_Name: healthPotion (3)
   m_TagString: Untagged
@@ -1454,6 +1590,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360723071}
   m_CullTransparentMesh: 1
+--- !u!114 &1360723077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360723071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5cfdc8bc0a4bf2bc36b9eec47d97a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 6281455671880511247, guid: af59429f4b121469e8d078246f6bb5d6, type: 3}
 --- !u!1 &1500328259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,7 +1823,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 416, y: 186.85706}
+  m_AnchoredPosition: {x: 392, y: 186.85706}
   m_SizeDelta: {x: 747.7515, y: 381.5204}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1626082099
@@ -1690,6 +1839,7 @@ GameObject:
   - component: {fileID: 1626082101}
   - component: {fileID: 1626082104}
   - component: {fileID: 1626082103}
+  - component: {fileID: 1626082105}
   m_Layer: 1
   m_Name: healthPotion
   m_TagString: Untagged
@@ -1784,6 +1934,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1626082105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626082099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5cfdc8bc0a4bf2bc36b9eec47d97a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 6281455671880511247, guid: af59429f4b121469e8d078246f6bb5d6, type: 3}
 --- !u!1001 &1654230047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1882,6 +2045,7 @@ GameObject:
   - component: {fileID: 1720819779}
   - component: {fileID: 1720819778}
   - component: {fileID: 1720819777}
+  - component: {fileID: 1720819781}
   m_Layer: 1
   m_Name: healthPotion (2)
   m_TagString: Untagged
@@ -1976,6 +2140,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720819775}
   m_CullTransparentMesh: 1
+--- !u!114 &1720819781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720819775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c5cfdc8bc0a4bf2bc36b9eec47d97a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 6281455671880511247, guid: af59429f4b121469e8d078246f6bb5d6, type: 3}
 --- !u!1 &1725524059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,6 +2232,7 @@ GameObject:
   - component: {fileID: 1870128315}
   - component: {fileID: 1870128317}
   - component: {fileID: 1870128316}
+  - component: {fileID: 1870128318}
   m_Layer: 5
   m_Name: slot 2
   m_TagString: Untagged
@@ -2079,7 +2257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.564, y: 0.06556909}
   m_AnchorMax: {x: 0.564, y: 0.06556909}
-  m_AnchoredPosition: {x: -71, y: 2.5400543}
+  m_AnchoredPosition: {x: -85, y: 2.9999542}
   m_SizeDelta: {x: 34.337006, y: 33.0659}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1870128316
@@ -2120,6 +2298,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870128314}
   m_CullTransparentMesh: 1
+--- !u!114 &1870128318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870128314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db0a6f7507e646aba1365092519eb01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i: 1
 --- !u!1 &1879811137 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3047399632324961758, guid: 660278654dd19a74d9cc4b065ebbdfd9, type: 3}
@@ -2234,7 +2425,7 @@ GameObject:
   - component: {fileID: 1944895067}
   - component: {fileID: 1944895066}
   m_Layer: 0
-  m_Name: dropGear (2)
+  m_Name: dropGear (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2303,7 +2494,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1944895067}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 516559769}
+        m_TargetAssemblyTypeName: Slot, Assembly-CSharp
+        m_MethodName: dropItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11500000, guid: 57c5cfdc8bc0a4bf2bc36b9eec47d97a, type: 3}
+        m_TargetAssemblyTypeName: Slot, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1944895067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2353,6 +2568,7 @@ GameObject:
   - component: {fileID: 2103455269}
   - component: {fileID: 2103455271}
   - component: {fileID: 2103455270}
+  - component: {fileID: 2103455272}
   m_Layer: 5
   m_Name: slot1
   m_TagString: Untagged
@@ -2377,7 +2593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.48037523, y: 0.06556909}
   m_AnchorMax: {x: 0.48037523, y: 0.06556909}
-  m_AnchoredPosition: {x: -81, y: 2.5401}
+  m_AnchoredPosition: {x: -95, y: 3}
   m_SizeDelta: {x: 34.337, y: 33.0659}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2103455270
@@ -2418,6 +2634,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103455268}
   m_CullTransparentMesh: 1
+--- !u!114 &2103455272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103455268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db0a6f7507e646aba1365092519eb01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i: 0
 --- !u!1 &2128265532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2500,7 +2729,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2128265535}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2103455272}
+        m_TargetAssemblyTypeName: Slot, Assembly-CSharp
+        m_MethodName: dropItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11500000, guid: 57c5cfdc8bc0a4bf2bc36b9eec47d97a, type: 3}
+        m_TargetAssemblyTypeName: Slot, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2128265535
 MonoBehaviour:
   m_ObjectHideFlags: 0
