@@ -7,8 +7,10 @@ public class Boss : MonoBehaviour
 
     public Transform player;
     public bool isFlipped = false;
-    public float offset = 0;
-    public float secoffset = 1;
+    public float offset = -1;
+    public float secoffset = -1;
+    public bool isAttacking = false;
+    public int attackDamage = 10;
 
     Rigidbody2D rb;
 
@@ -32,7 +34,7 @@ public class Boss : MonoBehaviour
 
             isFlipped = false;
             offset *= -1;
-            secoffset *= -1;    
+            secoffset *= -1;
         }
         else if (transform.position.x < player.position.x + offset && !isFlipped)
         {
@@ -45,6 +47,14 @@ public class Boss : MonoBehaviour
             isFlipped = true;
             offset *= -1;
             secoffset *= -1;
+        }
+    }
+
+    private void Update()
+    {
+        if (isAttacking && GetComponent<BossAttack>().contact)
+        {
+            player.GetComponent<healthScript>().TakeDamage(attackDamage);
         }
     }
 }
