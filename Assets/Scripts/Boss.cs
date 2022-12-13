@@ -52,9 +52,12 @@ public class Boss : MonoBehaviour
 
     private void Update()
     {
-        if (isAttacking && GetComponent<BossAttack>().contact)
+        if (player != null)
         {
-            player.GetComponent<healthScript>().TakeDamage(attackDamage);
+            if (isAttacking && GetComponent<BossAttack>().contact)
+            {
+                player.GetComponent<healthScript>().TakeDamage(attackDamage);
+            }
         }
     }
 }

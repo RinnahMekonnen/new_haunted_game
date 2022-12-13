@@ -5,11 +5,11 @@ using UnityEngine;
 public class BossHealth : MonoBehaviour
 {
 
-    public int health = 10;
+    public float health = 10;
 
     public bool isInvulnerable = false;
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if (isInvulnerable)
         {
