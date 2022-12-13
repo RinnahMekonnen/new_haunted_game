@@ -5530,6 +5530,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   isInvulnerable: 0
+  animator: {fileID: 0}
+  isdead: 0
 --- !u!1 &1918548440
 GameObject:
   m_ObjectHideFlags: 0

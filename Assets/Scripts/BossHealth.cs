@@ -9,6 +9,21 @@ public class BossHealth : MonoBehaviour
 
     public bool isInvulnerable = false;
 
+    public Animator animator;
+
+    public bool isdead;
+
+    public void Update()
+    {
+        if (isdead)
+        {
+            if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5)
+            {
+                Destroy(gameObject, 1.8f);
+            }
+        }
+    }
+
     public void TakeDamage(float damage)
     {
         if (isInvulnerable)
@@ -27,6 +42,8 @@ public class BossHealth : MonoBehaviour
     void Die()
     {
         //Instantiate(deathEffect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        animator = gameObject.GetComponent<Animator>();
+        animator.SetTrigger("Die");
+        isdead = true;
     }
 }
