@@ -33,7 +33,7 @@ public class movingPlatform : MonoBehaviour {
 
         if (col.gameObject.tag == "Platform") {                   //  Tag it with a wall or other object
             GetComponent<AudioSource>().PlayOneShot (collisionSound, 2.0f);         //  Plays a sound on collision
-            baseDirection = baseDirection + Random.Range (-6, 6);   // Switch to a new direction on collision
+            baseDirection = baseDirection + Random.Range (-8, 8);   // Switch to a new direction on collision
 
     }
 }
