@@ -13,8 +13,8 @@ using UnityEngine;
 public class movingPlatform : MonoBehaviour {
 
     //public AudioClip AlienScream;
-    public float minSpeed = 0.000000000000001f;  // minimum range of speed to move
-    public float maxSpeed = 0.000000000000002f;  // maximum range of speed to move
+    public float minSpeed = 1f;  // minimum range of speed to move
+    public float maxSpeed = 3f;  // maximum range of speed to move
     float speed;     // speed is a constantly changing value from the random range of minSpeed and maxSpeed 
     
     public string [] collisionTags;             //  What are the GO tags that will act as colliders that trigger a
@@ -33,7 +33,7 @@ public class movingPlatform : MonoBehaviour {
 
         if (col.gameObject.tag == "Platform") {                   //  Tag it with a wall or other object
             GetComponent<AudioSource>().PlayOneShot (collisionSound, 2.0f);         //  Plays a sound on collision
-            baseDirection = baseDirection + Random.Range (-8, 8);   // Switch to a new direction on collision
+            baseDirection = baseDirection + Random.Range (-6, 6);   // Switch to a new direction on collision
 
     }
 }
@@ -43,8 +43,12 @@ public class movingPlatform : MonoBehaviour {
         randomDirection = new Vector3(0, Mathf.Sin(timeVar) * (rotationRange / 2) + baseDirection, 0); //   Moving at random angles 
         timeVar += step;
         speed = Random.Range(minSpeed, maxSpeed);              //      Change this range of numbers to change speed
+        //speed = 1.1f;
+        //speed = 0.00000000000000000000000000000000000000000000000000000000000000001f;
+
+        //GetComponent<Rigidbody2D>().AddForce(transform.forward * speed);
         GetComponent<Rigidbody2D>().AddForce(transform.forward * speed);
-        transform.Rotate(randomDirection * Time.deltaTime * 0.75f);        
+        transform.Rotate(randomDirection * Time.deltaTime * 0.50f);        
         }
     }
 
