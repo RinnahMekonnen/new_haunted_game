@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossRoom.unity
     guid: 8039a182557e35547b87caa11f5e5b14
+  - enabled: 1
+    path: Assets/Scenes/Big Monster Room.unity
+    guid: afd0a0aa31d6345ab9bdd51b16249bfc
+  - enabled: 1
+    path: Assets/Scenes/room 2.unity
+    guid: aa30401f488a64c23a9cd37e70a6b6c8
   m_configObjects: {}
