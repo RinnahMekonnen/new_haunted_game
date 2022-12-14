@@ -9,6 +9,8 @@ public class healthScript : MonoBehaviour
     public int PlayerHealth = 5;
     public bool invulnerable = false;
     public int iFrameTime = 2;
+    SceneChanger sceneChanger;
+    public float deathDelay = 3;
     //public Text healthText;
 
     public void TakeDamage(int attackDamage)
@@ -25,7 +27,9 @@ public class healthScript : MonoBehaviour
             PlayerHealth = 0;
             animator.SetTrigger("IsDead");
             //healthSlider.gameObject.SetActive(false);
-            Destroy(this.gameObject, 1f);
+            Destroy(this.gameObject, deathDelay);
+            sceneChanger = GetComponent<SceneChanger>();
+            sceneChanger.ToMainMenu();
         }
     }
 

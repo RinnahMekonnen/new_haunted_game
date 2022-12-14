@@ -12,4 +12,24 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("BossRoom");
     }
 
+    public void ToRoom2()
+    {
+        SceneManager.LoadScene("room 2");
+    }
+
+    public void ToBigMonsterRoom()
+    {
+        SceneManager.LoadScene("Big Monster Room");
+    }
+
+    public void ToRoomone()
+    {
+        SceneManager.LoadScene("room one");
+    }
+
+    public void ToMainMenu()
+    {
+        SceneManager.LoadScene("MAIN MENU");
+    }
+
 }
