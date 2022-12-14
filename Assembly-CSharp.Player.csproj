@@ -45,6 +45,8 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
      <Compile Include="Assets/MetroidvaniaController/Scripts/Player/PlayerMovement.cs" />
      <Compile Include="Assets/MetroidvaniaController/Animation/Scripts/EndParamBehaviour.cs" />
+     <Compile Include="Assets/movingPlatform.cs" />
+     <Compile Include="Assets/Scenes/ItemInventoryCode/spawn.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
      <Compile Include="Assets/Scripts/BossAttack.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
@@ -55,6 +57,7 @@
      <Compile Include="Assets/MetroidvaniaController/Scripts/Player/CameraFollow.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
+     <Compile Include="Assets/Scripts/KillBoss.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
@@ -89,7 +92,7 @@
      <Compile Include="Assets/MetroidvaniaController/Scripts/Environment/Grass.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
-     <Compile Include="Assets/Scenes/SceneChanger.cs" />
+     <Compile Include="Assets/Scripts/SceneChanger.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
      <Compile Include="Assets/Scripts/FlyingEyeEnemy.cs" />
      <Compile Include="Assets/MetroidvaniaController/Scripts/Environment/DestructibleObject.cs" />
@@ -102,10 +105,11 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
      <Compile Include="Assets/Scripts/EnemyHealth.cs" />
+     <Compile Include="Assets/Scenes/ItemInventoryCode/Slot.cs" />
      <Compile Include="Assets/Scripts/EnemyAttack.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
-     <Compile Include="Assets/Scenes/ItemInventoryCode/Slot.cs" />
-     <Compile Include="Assets/Scenes/ItemInventoryCode/spawn.cs" />
+     <Compile Include="Assets/Scripts/ActiveAttack.cs" />
+     <Compile Include="Assets/Scenes/ItemInventoryCode/healthNew.cs" />
      <None Include="Assets/Cainos/Pixel Art Icon Pack - RPG/Shader/SH UI Icon Outline Color.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
