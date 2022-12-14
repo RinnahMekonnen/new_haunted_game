@@ -6339,11 +6339,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1101900602}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddbd5295dc66442ee87f1afaaf70d66f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d93efd5304794b10921c0ab85ca2dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpeed: 1e-40
-  maxSpeed: 1e-40
+  minSpeed: 0.00001
+  maxSpeed: 0.00002
   collisionTags: []
   collisionSound: {fileID: 0}
 --- !u!1 &1104029488
@@ -8124,11 +8124,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1358813745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddbd5295dc66442ee87f1afaaf70d66f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d93efd5304794b10921c0ab85ca2dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpeed: 1e-40
-  maxSpeed: 1e-40
+  minSpeed: 0.00001
+  maxSpeed: 0.00002
   collisionTags: []
   collisionSound: {fileID: 0}
 --- !u!50 &1358813748
