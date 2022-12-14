@@ -13,13 +13,15 @@ public class BossHealth : MonoBehaviour
 
     public bool isdead;
 
+    public float destroyOffsetTime = 1.8f;
+
     public void Update()
     {
         if (isdead)
         {
             if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5)
             {
-                Destroy(gameObject, 1.8f);
+                Destroy(gameObject, destroyOffsetTime);
             }
         }
     }
