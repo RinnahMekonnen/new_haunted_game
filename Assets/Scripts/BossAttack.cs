@@ -1,32 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class BossAttack : MonoBehaviour
 {
-    public int attackDamage = 1;
 
-    public Vector3 attackOffset;
-    public float attackRange = 1f;
-    //public LayerMask attackMask;
+    public int attackDamage = 10;
+    public float initialHealth = 100.0f;
+    public bool contact = false;
 
-    public void Attack()
+    private float currentHealth;
+    healthScript enemy;
+    Boss boss;
+
+    void Start()
     {
-        Vector3 pos = transform.position;
-        pos += transform.right * attackOffset.x;
-        pos += transform.up * attackOffset.y;
+        currentHealth = initialHealth;
+        boss = GetComponent<Boss>();
+    }
 
-        Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, 0);//attackMask);
-        if (colInfo != null)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player") //get from collision the object you collided with
         {
-            colInfo.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
+            contact = true;
+            if (boss.isAttacking)
+            {
+                // get the object.getcompionent,EnemyDamage>
+                // set enemy to the one above
+                enemy = collision.GetComponent<healthScript>();
+                enemy.TakeDamage(attackDamage);
+            }
         }
     }
 
-
-
-
-
-
-
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            contact = false;
+        }
+    }
 }

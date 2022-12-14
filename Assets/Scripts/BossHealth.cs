@@ -5,11 +5,28 @@ using UnityEngine;
 public class BossHealth : MonoBehaviour
 {
 
-    public int health = 10;
+    public float health = 10;
 
     public bool isInvulnerable = false;
 
-    public void TakeDamage(int damage)
+    public Animator animator;
+
+    public bool isdead;
+
+    public float destroyOffsetTime = 1.8f;
+
+    public void Update()
+    {
+        if (isdead)
+        {
+            if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5)
+            {
+                Destroy(gameObject, destroyOffsetTime);
+            }
+        }
+    }
+
+    public void TakeDamage(float damage)
     {
         if (isInvulnerable)
         {
@@ -27,6 +44,8 @@ public class BossHealth : MonoBehaviour
     void Die()
     {
         //Instantiate(deathEffect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        animator = gameObject.GetComponent<Animator>();
+        animator.SetTrigger("Die");
+        isdead = true;
     }
 }

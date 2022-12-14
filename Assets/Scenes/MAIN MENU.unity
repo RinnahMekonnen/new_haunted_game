@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -39858,6 +39858,7 @@ GameObject:
   - component: {fileID: 1981365119}
   - component: {fileID: 1981365118}
   - component: {fileID: 1981365117}
+  - component: {fileID: 1981365120}
   m_Layer: 5
   m_Name: play
   m_TagString: Untagged
@@ -39929,13 +39930,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: d178b198f14e6462ba42ed2d5e88d1d0, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1981365120}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: Scene4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -39979,6 +39980,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981365115}
   m_CullTransparentMesh: 1
+--- !u!114 &1981365120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981365115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d178b198f14e6462ba42ed2d5e88d1d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1982555129
 GameObject:
   m_ObjectHideFlags: 0
@@ -41041,6 +41054,7 @@ MonoBehaviour:
   PlayerHealth: 5
   invulnerable: 0
   iFrameTime: 2
+  deathDelay: 3
 --- !u!114 &2074480691
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,15 +33,16 @@ public class Attack : MonoBehaviour
 			canAttack = false;
 			animator.SetBool("IsAttacking", true);
 			StartCoroutine(AttackCooldown());
+			swingDamage();
 		}
 
-		if (Input.GetKeyDown(KeyCode.V))
-		{
-			GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f,-0.2f), Quaternion.identity) as GameObject; 
-			Vector2 direction = new Vector2(transform.localScale.x, 0);
-			throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction; 
-			throwableWeapon.name = "ThrowableWeapon";
-		}
+		//if (Input.GetKeyDown(KeyCode.V))
+		//{
+		//	GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f,-0.2f), Quaternion.identity) as GameObject; 
+		//	Vector2 direction = new Vector2(transform.localScale.x, 0);
+		//	throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction; 
+		//	throwableWeapon.name = "ThrowableWeapon";
+		//}
 	}
 
 	IEnumerator AttackCooldown()
@@ -67,4 +68,25 @@ public class Attack : MonoBehaviour
 			}
 		}
 	}
+
+	public void swingDamage()
+	{
+        dmgValue = Mathf.Abs(dmgValue);
+        Collider2D[] collidersEnemies = Physics2D.OverlapCircleAll(attackCheck.position, 0.9f);
+        for (int i = 0; i < collidersEnemies.Length; i++)
+        {
+		
+            if (collidersEnemies[i].gameObject.tag == "Boss")  // || collidersEnemies[i].gameObject.tag == "Enemy")
+            {
+                //Debug.Log(collidersEnemies[i].gameObject.GetComponent<BossHealth>().health);
+                //if (collidersEnemies[i].transform.position.x - transform.position.x < 0)
+                //{
+                //    dmgValue = 0;
+                //}
+                collidersEnemies[i].gameObject.GetComponent<BossHealth>().TakeDamage(dmgValue);
+                //cam.GetComponent<CameraFollow>().ShakeCamera();
+            }
+        }
+    }
+
 }

@@ -22,6 +22,7 @@ public class Boss_Walk : StateMachineBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = animator.GetComponent<Rigidbody2D>();
         boss = animator.GetComponent<Boss>();
+        boss.isAttacking = false;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
