@@ -29,7 +29,7 @@ public class healthScript : MonoBehaviour
             //healthSlider.gameObject.SetActive(false);
             Destroy(this.gameObject, deathDelay);
             sceneChanger = GetComponent<SceneChanger>();
-            sceneChanger.ToMainMenu();
+            sceneChanger.Scene1();
         }
     }
 
