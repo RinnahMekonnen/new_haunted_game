@@ -11,6 +11,8 @@ public class healthScript : MonoBehaviour
     public int iFrameTime = 2;
     SceneChanger sceneChanger;
     public float deathDelay = 3;
+
+    public GameObject[] hearts;
     //public Text healthText;
 
     public void TakeDamage(int attackDamage)
@@ -18,6 +20,7 @@ public class healthScript : MonoBehaviour
         Animator animator = GetComponent<Animator>();
         if (!invulnerable)
         {
+            Destroy(hearts[PlayerHealth-1].gameObject);
             PlayerHealth -= attackDamage;
             StartCoroutine(Invincible());
         }
@@ -30,6 +33,14 @@ public class healthScript : MonoBehaviour
             Destroy(this.gameObject, deathDelay);
             sceneChanger = GetComponent<SceneChanger>();
             sceneChanger.Scene1();
+        }
+    }
+
+    public void addHeart()
+    {
+        if (PlayerHealth < 5)
+        {
+            PlayerHealth += 1;
         }
     }
 
