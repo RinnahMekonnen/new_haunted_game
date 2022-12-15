@@ -51,6 +51,7 @@
      <Compile Include="Assets/Scripts/BossAttack.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
      <Compile Include="Assets/MetroidvaniaController/Scripts/Player/Attack.cs" />
+     <Compile Include="Assets/Scenes/dataManager.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
      <Compile Include="Assets/Scripts/Boss.cs" />
@@ -90,7 +91,6 @@
      <Compile Include="Assets/MetroidvaniaController/Scripts/Enemies/Enemy.cs" />
      <Compile Include="Assets/Scripts/FollowPlayer.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
-     <Compile Include="Assets/Scenes/gameSavedData.cs" />
      <Compile Include="Assets/Scripts/AltPlayerMovement.cs" />
      <Compile Include="Assets/Scripts/Boss_Walk.cs" />
      <Compile Include="Assets/MetroidvaniaController/Scripts/Environment/Grass.cs" />

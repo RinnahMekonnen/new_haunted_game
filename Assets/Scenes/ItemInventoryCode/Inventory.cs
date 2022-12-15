@@ -12,7 +12,6 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         health = GameObject.FindGameObjectWithTag("Player").GetComponent<healthScript>();
-     
     }
     
     private void Update()
