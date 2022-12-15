@@ -9,11 +9,14 @@ public class EnemyAttack : MonoBehaviour
 
     public float initialHealth = 100.0f;
 
+    Animator anim;
+
     private float currentHealth;
 
     void Start()
     {
         currentHealth = initialHealth;
+        anim = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,7 +25,7 @@ public class EnemyAttack : MonoBehaviour
         {
             // get the object.getcompionent,EnemyDamage>
             // set enemy to the one above
-
+            anim.SetTrigger("Attack");
             enemy = collision.GetComponent<healthScript>();
             enemy.TakeDamage(attackDamage);
         }
