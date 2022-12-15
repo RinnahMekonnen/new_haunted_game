@@ -13263,7 +13263,7 @@ GameObject:
   - component: {fileID: 675088922}
   - component: {fileID: 675088921}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: backgroundMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13279,7 +13279,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 92ee2a765b336441d967b6784b895b1a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -41146,6 +41146,10 @@ MonoBehaviour:
   iFrameTime: 2
   deathDelay: 3
   player: {fileID: 0}
+  slot1: {fileID: 0}
+  slot2: {fileID: 0}
+  slot3: {fileID: 0}
+  slot4: {fileID: 0}
   hearts: []
   heart: {fileID: 0}
 --- !u!114 &2074480691
