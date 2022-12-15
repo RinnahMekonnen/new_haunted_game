@@ -5,6 +5,7 @@ using UnityEngine;
 public class room2door : MonoBehaviour
 {
 
+    private bool canChangeRooms = false;
     SceneChanger sceneChanger;
 
     // Start is called before the first frame update
@@ -13,8 +14,28 @@ public class room2door : MonoBehaviour
         sceneChanger = GetComponent<SceneChanger>();
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetAxisRaw("Vertical") > 0.4 && canChangeRooms)
+        {
+            sceneChanger.Scene2();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        sceneChanger.Scene2();
+        if (collision.tag == "Player")
+        {
+            canChangeRooms = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            canChangeRooms = false;
+        }
     }
 }
