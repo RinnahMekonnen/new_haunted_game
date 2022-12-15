@@ -24,13 +24,13 @@ public class EnemyHealth : MonoBehaviour
             health = 0;
             //Die
             dead = true;
-            anim.SetTrigger("Die");
+            //anim.SetTrigger("Die");
             //healthSlider.gameObject.SetActive(false);
             Destroy(this.gameObject, 2f);
         }
         else
         {
-            anim.SetTrigger("Hit");
+            //anim.SetTrigger("Hit");
         }
 
         //healthSlider.value = health;
