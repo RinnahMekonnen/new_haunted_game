@@ -13,6 +13,7 @@ public class healthScript : MonoBehaviour
     public float deathDelay = 3;
 
     public GameObject[] hearts;
+    public GameObject heart;
     //public Text healthText;
 
     public void TakeDamage(int attackDamage)
@@ -35,11 +36,18 @@ public class healthScript : MonoBehaviour
             sceneChanger.Scene1();
         }
     }
-
+    
     public void addHeart()
     {
         if (PlayerHealth < 5)
         {
+            Transform lastHeart = hearts[PlayerHealth-2].transform;
+            GameObject newHeart = heart;
+            hearts[PlayerHealth-1] = newHeart;
+                Instantiate(newHeart);
+                newHeart.transform.position = new Vector3(60, 56, 0);
+            Canvas canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+            newHeart.transform.SetParent(canvas.transform, false);
             PlayerHealth += 1;
         }
     }

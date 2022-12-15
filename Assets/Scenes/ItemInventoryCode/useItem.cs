@@ -15,8 +15,11 @@ public class useItem : MonoBehaviour
 
     public void useHealthPotion()
     {
-        health.addHeart();
-        Destroy(gameObject);
+        if (health.PlayerHealth < 5)
+        {
+            health.addHeart();
+            Destroy(gameObject);
+        }
     }
 
 }
