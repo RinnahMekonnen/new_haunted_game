@@ -9,6 +9,7 @@ TagManager:
   - Platform
   - front
   - enemy
+  - goblin
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - front
   - Platform
   - enemies
-  - 
+  - goblin
   - 
   - 
   - 
@@ -54,4 +55,7 @@ TagManager:
     locked: 0
   - name: Platform
     uniqueID: 2122559033
+    locked: 0
+  - name: gobline
+    uniqueID: 1492502323
     locked: 0
