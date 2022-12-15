@@ -5,7 +5,7 @@ using UnityEngine;
 public class Boss : MonoBehaviour
 {
 
-    public Transform player;
+    Transform player;
     public bool isFlipped = false;
     public float offset = -1;
     public float secoffset = -1;
@@ -14,8 +14,14 @@ public class Boss : MonoBehaviour
 
     Rigidbody2D rb;
 
-    public void LookAtPlayer()
+    void Awake()
     {
+        GameObject p = GameObject.FindGameObjectWithTag("Player");
+        player = p.transform;
+    }
+
+    public void LookAtPlayer()
+    { 
         if (player == null)
         {
             return;
@@ -50,7 +56,7 @@ public class Boss : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (player != null)
         {
