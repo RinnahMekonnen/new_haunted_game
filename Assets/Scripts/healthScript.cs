@@ -16,6 +16,15 @@ public class healthScript : MonoBehaviour
     public GameObject heart;
     //public Text healthText;
 
+    public void loadHealth(int health)
+    {
+        for (int i = 5-health; i > 0; i--)
+        {
+            hearts[i].SetActive(false);
+            PlayerHealth = health;
+        }
+    }
+
     public void TakeDamage(int attackDamage)
     {
         Animator animator = GetComponent<Animator>();

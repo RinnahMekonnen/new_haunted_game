@@ -12,7 +12,6 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         health = GameObject.FindGameObjectWithTag("Player").GetComponent<healthScript>();
-     
     }
     
     private void Update()
@@ -25,13 +24,24 @@ public class Inventory : MonoBehaviour
 
     public void useHealthPotion()
     {
-        if (health.PlayerHealth < 5)
+        bool isPotion = false;
+        foreach (bool bl in isFull)
+        {
+            if (bl)
+            {
+                isPotion = true;
+                break;
+            }
+        }
+        
+        if (health.PlayerHealth < 5&& isPotion)
         {
             for (int i = isFull.Length-1; i >= 0 ; i--)
             {
                 if (isFull[i])
                 {
                     Destroy(slots[i].transform.GetChild(0).gameObject);
+                    isFull[i] = false;
                     health.addHeart();
                     break;
                 }
