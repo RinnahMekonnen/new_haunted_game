@@ -39932,7 +39932,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1981365120}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: Scene4
+        m_MethodName: Scene3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -41055,6 +41055,8 @@ MonoBehaviour:
   invulnerable: 0
   iFrameTime: 2
   deathDelay: 3
+  hearts: []
+  heart: {fileID: 0}
 --- !u!114 &2074480691
 MonoBehaviour:
   m_ObjectHideFlags: 0
