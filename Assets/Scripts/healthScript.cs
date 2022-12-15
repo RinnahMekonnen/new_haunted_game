@@ -12,6 +12,10 @@ public class healthScript : MonoBehaviour
     SceneChanger sceneChanger;
     public float deathDelay = 3;
     public GameObject player;
+    public GameObject slot1;
+    public GameObject slot2;
+    public GameObject slot3;
+    public GameObject slot4;
 
     public GameObject[] hearts;
     public GameObject heart;
@@ -44,6 +48,10 @@ public class healthScript : MonoBehaviour
 
     public void changeScene()
     {
+        slot1.SetActive(false);
+        slot2.SetActive(false);
+        slot3.SetActive(false);
+        slot4.SetActive(false);
         sceneChanger = GetComponent<SceneChanger>();
         sceneChanger.Scene1();
     }
