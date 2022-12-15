@@ -12,7 +12,7 @@ public class FlyingEyeEnemy : MonoBehaviour
 
     float time;
     Vector3 originalPosition;
-    PlayerHealth playerInRange;
+    private healthScript _healthScript;
     Animator anim;
     EnemyHealth enemyHealth;
     bool facingRight = true;
@@ -23,7 +23,7 @@ public class FlyingEyeEnemy : MonoBehaviour
         time = attackDelay;
 
         anim = GetComponent<Animator>();
-        enemyHealth = GetComponent<EnemyHealth>();
+        _healthScript = GetComponent<healthScript>();
     }
 
     private void Update()
@@ -37,18 +37,18 @@ public class FlyingEyeEnemy : MonoBehaviour
             if (colliders[i].gameObject.CompareTag("Player"))
             {
                 playercount++;
-                playerInRange = colliders[i].GetComponent<PlayerHealth>();
+               _healthScript = colliders[i].GetComponent<healthScript>();
             }
         }
 
         if (playercount <= 0)
-            playerInRange = null;
+            _healthScript = null;
 
-        if(playerInRange != null)
+        if(_healthScript != null)
         {
-            if (!playerInRange.dead)
+            if (_healthScript.PlayerHealth>0)
             {
-                float distance = Vector3.Distance(transform.position, playerInRange.transform.position);
+                float distance = Vector3.Distance(transform.position, _healthScript.transform.position);
                 if (distance <= 1.8f)
                 {
                     //Attack
@@ -61,10 +61,10 @@ public class FlyingEyeEnemy : MonoBehaviour
                 }
                 else
                 {
-                    transform.position = Vector3.Lerp(transform.position, playerInRange.transform.position, speed);
+                    transform.position = Vector3.Lerp(transform.position, _healthScript.transform.position, speed);
                 }
 
-                float xDist = playerInRange.transform.position.x - transform.position.x;
+                float xDist = _healthScript.transform.position.x - transform.position.x;
                 if(xDist < 0)
                 {
                     if (facingRight)
@@ -107,9 +107,9 @@ public class FlyingEyeEnemy : MonoBehaviour
 
     public void Attack()
     {
-        if(playerInRange != null)
+        if(_healthScript != null)
         {
-            playerInRange.TakeDamage(damage);
+            _healthScript.TakeDamage(1);
             //Damage Player
 
             anim.SetTrigger("Attack");

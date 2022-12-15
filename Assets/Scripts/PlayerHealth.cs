@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health = 100;
+    public int health = 5;
     //public Slider healthSlider;
     public bool dead = false;
 
@@ -16,9 +16,9 @@ public class PlayerHealth : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage()
     {
-        health -= damage;
+        health -= 1;
         if (health <= 0)
         {
             health = 0;
