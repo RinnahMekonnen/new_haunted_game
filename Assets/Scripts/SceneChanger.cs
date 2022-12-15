@@ -24,4 +24,8 @@ public class SceneChanger: MonoBehaviour
         SceneManager.LoadScene("BossRoom");  
        
     }  
+    public void Scene5() {  
+            SceneManager.LoadScene("contols");  
+        }  
+    
 } 
