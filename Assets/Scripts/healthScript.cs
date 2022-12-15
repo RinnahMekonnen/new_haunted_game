@@ -21,7 +21,7 @@ public class healthScript : MonoBehaviour
         Animator animator = GetComponent<Animator>();
         if (!invulnerable)
         {
-            Destroy(hearts[PlayerHealth-1].gameObject);
+            hearts[PlayerHealth-1].SetActive(false);
             PlayerHealth -= attackDamage;
             StartCoroutine(Invincible());
         }
@@ -41,13 +41,7 @@ public class healthScript : MonoBehaviour
     {
         if (PlayerHealth < 5)
         {
-            Transform lastHeart = hearts[PlayerHealth-2].transform;
-            GameObject newHeart = heart;
-            hearts[PlayerHealth-1] = newHeart;
-                Instantiate(newHeart);
-                newHeart.transform.position = new Vector3(60, 56, 0);
-            Canvas canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-            newHeart.transform.SetParent(canvas.transform, false);
+            hearts[PlayerHealth].SetActive(true);
             PlayerHealth += 1;
         }
     }
