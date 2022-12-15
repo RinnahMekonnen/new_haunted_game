@@ -30,7 +30,7 @@ public class healthScript : MonoBehaviour
         Animator animator = GetComponent<Animator>();
         if (!invulnerable)
         {
-            hearts[PlayerHealth-1].SetActive(false);
+            hearts[PlayerHealth].SetActive(false);
             PlayerHealth -= attackDamage;
             StartCoroutine(Invincible());
         }
