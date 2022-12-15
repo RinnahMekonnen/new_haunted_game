@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BMRdoor : MonoBehaviour
@@ -7,6 +8,10 @@ public class BMRdoor : MonoBehaviour
 
     private bool canChangeRooms = false;
     SceneChanger sceneChanger;
+
+    public GameObject gob1;
+    public GameObject gob2;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +32,10 @@ public class BMRdoor : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            canChangeRooms = true;
+            if (gob1.IsDestroyed() && gob2.IsDestroyed())
+            {
+                canChangeRooms = true;
+            }
         }
     }
 

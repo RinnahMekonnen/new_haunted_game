@@ -63,7 +63,7 @@
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
      <Compile Include="Assets/MetroidvaniaController/Scripts/Enemies/ThrowableProjectile.cs" />
-     <Compile Include="Assets/Scenes/dataManager.cs" />
+     <Compile Include="Assets/Scripts/dataManager.cs" />
      <Compile Include="Assets/MetroidvaniaController/Scripts/KillZone.cs" />
      <Compile Include="Assets/MetroidvaniaController/Animation/Scripts/JumpStateBehaviour.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
@@ -114,6 +114,7 @@
      <Compile Include="Assets/Scripts/EnemyAttack.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
      <Compile Include="Assets/Scripts/ActiveAttack.cs" />
+     <Compile Include="Assets/Scripts/audioPlayer.cs" />
      <None Include="Assets/Cainos/Pixel Art Icon Pack - RPG/Shader/SH UI Icon Outline Color.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
