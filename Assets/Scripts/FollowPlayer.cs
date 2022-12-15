@@ -12,7 +12,8 @@ public class FollowPlayer : MonoBehaviour
 
     void Start()
     {
-
+        GameObject p = GameObject.FindGameObjectWithTag("Player");
+        target = p.transform;
     }
 
     void LateUpdate()
