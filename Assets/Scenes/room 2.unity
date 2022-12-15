@@ -1570,17 +1570,25 @@ PrefabInstance:
       propertyPath: m_TagString
       value: enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7117461493883212444, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117461493883212444, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 2122559033
+      objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4742,17 +4750,25 @@ PrefabInstance:
       propertyPath: m_TagString
       value: enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7117461493883212444, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117461493883212444, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 2122559033
+      objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_RootOrder
       value: 267
       objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8234,17 +8250,25 @@ PrefabInstance:
       propertyPath: m_TagString
       value: enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7117461493883212444, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117461493883212444, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 2122559033
+      objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_RootOrder
       value: 266
       objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7117461493883212447, guid: f670908aa91074ece95ce3ad23af703a, type: 3}
       propertyPath: m_LocalPosition.x
