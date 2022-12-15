@@ -25,7 +25,7 @@ public class SceneChanger: MonoBehaviour
        
     }  
     public void Scene5() {  
-            SceneManager.LoadScene("contols");  
+            SceneManager.LoadScene("controls");  
         }  
     
 } 
