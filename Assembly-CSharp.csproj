@@ -82,6 +82,7 @@
      <Compile Include="Assets/MetroidvaniaController/Scripts/Player/ThrowableWeapon.cs" />
      <Compile Include="Assets/Scenes/ItemInventoryCode/useItem.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
+     <Compile Include="Assets/FlyingEyeAttack.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
      <Compile Include="Assets/Scripts/BMRdoor.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
