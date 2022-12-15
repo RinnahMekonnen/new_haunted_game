@@ -13,7 +13,7 @@ using UnityEngine;
 public class movingPlatform : MonoBehaviour {
 
     //public AudioClip AlienScream;
-    public float minSpeed = 1f;  // minimum range of speed to move
+    public float minSpeed = 1.5f;  // minimum range of speed to move
     public float maxSpeed = 3f;  // maximum range of speed to move
     float speed;     // speed is a constantly changing value from the random range of minSpeed and maxSpeed 
     
