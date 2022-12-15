@@ -11,19 +11,13 @@ public class healthScript : MonoBehaviour
     public int iFrameTime = 2;
     SceneChanger sceneChanger;
     public float deathDelay = 3;
+    public GameObject player;
 
     public GameObject[] hearts;
     public GameObject heart;
     //public Text healthText;
 
-    public void loadHealth(int health)
-    {
-        for (int i = 5-health; i > 0; i--)
-        {
-            hearts[i].SetActive(false);
-            PlayerHealth = health;
-        }
-    }
+    
 
     public void TakeDamage(int attackDamage)
     {
@@ -42,11 +36,18 @@ public class healthScript : MonoBehaviour
             animator.SetTrigger("IsDead");
             //healthSlider.gameObject.SetActive(false);
             Destroy(this.gameObject, deathDelay);
-            sceneChanger = GetComponent<SceneChanger>();
-            sceneChanger.Scene1();
+            player.SetActive(false);
+            Invoke("changeScene", 2.0f);
+            
         }
     }
-    
+
+    public void changeScene()
+    {
+        sceneChanger = GetComponent<SceneChanger>();
+        sceneChanger.Scene1();
+    }
+
     public void addHeart()
     {
         if (PlayerHealth < 5)
