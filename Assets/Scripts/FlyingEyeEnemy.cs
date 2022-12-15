@@ -21,6 +21,7 @@ public class FlyingEyeEnemy : MonoBehaviour
     {
         originalPosition = transform.position;
         time = attackDelay;
+        enemyHealth = GetComponent<EnemyHealth>();
         anim = GetComponent<Animator>();
         _healthScript = GetComponent<healthScript>();
     }

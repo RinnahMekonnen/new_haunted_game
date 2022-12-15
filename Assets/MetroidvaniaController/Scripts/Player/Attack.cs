@@ -86,6 +86,11 @@ public class Attack : MonoBehaviour
                 collidersEnemies[i].gameObject.GetComponent<BossHealth>().TakeDamage(dmgValue);
                 //cam.GetComponent<CameraFollow>().ShakeCamera();
             }
+
+			if (collidersEnemies[i].gameObject.tag == "Enemy")
+			{
+                collidersEnemies[i].gameObject.GetComponent<EnemyHealth>().TakeDamage(dmgValue);
+            }
         }
     }
 
