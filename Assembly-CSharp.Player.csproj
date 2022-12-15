@@ -111,6 +111,7 @@
      <Compile Include="Assets/Scripts/EnemyAttack.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
      <Compile Include="Assets/Scripts/ActiveAttack.cs" />
+     <Compile Include="Assets/Scenes/gameSavedData.cs" />
      <None Include="Assets/Cainos/Pixel Art Icon Pack - RPG/Shader/SH UI Icon Outline Color.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />

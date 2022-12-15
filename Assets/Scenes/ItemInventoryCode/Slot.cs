@@ -6,7 +6,7 @@ using UnityEngine;
 public class Slot : MonoBehaviour
 {
     
-
+    private healthScript health;
     public void DropItem()
     {
         foreach (Transform child in transform)
